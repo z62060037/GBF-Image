@@ -1,0 +1,15 @@
+img文件夹
+× chara 角色全身图
+× cover 首页角色图
+× quest 任务半身图
+√ zoom 角色放大图
+
+py文件
+    pyGBFRES.py		    下载全部
+×   pyGBFbg.py			背景
+√   pyGBFchara.py		角色立绘
+√   pyGBFclass.py		主角职业
+√   pyGBFexchara.py 	人物编外立绘
+√   pyGBFmainchara.py	mainchara代表露莉亚和比
+√   pyGBFsummon.py		召唤石
+×   pyGBFweapon.py		武器

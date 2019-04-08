@@ -1,0 +1,2 @@
+error:http://game-a1.granbluefantasy.jp/assets/img/sp/assets/leader/job_change/185001_mc_0_01.png not exist
+error:http://game-a1.granbluefantasy.jp/assets/img/sp/assets/leader/job_change/185001_mc_1_01.png not exist

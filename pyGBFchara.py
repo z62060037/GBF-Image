@@ -1,4 +1,4 @@
-# 批量下载GBF武器立绘
+# 批量下载GBF角色立绘
 from queue import Queue
 import os
 
@@ -16,7 +16,8 @@ import pyGBFexchara as exchara
 dirname = os.getcwd()
 print_lock = threading.Lock()
 data_q = Queue()
-SAVELINK = False
+# SAVELINK = False
+SAVELINK = True
 DEBUG = False
 
 # chara[R/SR/SSR/skin] quest[r/sr/ssr/extra] summon[n/r/sr/ssr] zoom[r/sr/ssr/skin] mypage[r/sr/ssr/skin] class cover bg chara[extra] zoom[extra]
@@ -83,6 +84,7 @@ def saveIndex(imgData):
         gid = imgData.groupid
         count = 0
         # book
+        '''
         for isuf in suflist:
             try:
                 url = prefix1 + groupstr[gid] + imgName + isuf+ ".png"
@@ -95,6 +97,7 @@ def saveIndex(imgData):
                             linkfile.write(url+"\n")
             except:
                 pass
+        '''
         # zoom
         for isuf in suflist:
             try:
@@ -109,6 +112,7 @@ def saveIndex(imgData):
             except:
                 pass
         # quest
+        '''
         if(gid != 3):
             for iexp in explist:
                 try:
@@ -122,7 +126,9 @@ def saveIndex(imgData):
                                 linkfile.write(url + "\n")
                 except:
                     pass
+        '''
         # cover
+        '''
         if(gid != 4):
             for isuf in suflist:
                 try:
@@ -137,7 +143,7 @@ def saveIndex(imgData):
                 except:
                     pass
 
-
+        '''
         #update logic
         if(count >0 ):
             if(imgData.id > groupstack[gid]):

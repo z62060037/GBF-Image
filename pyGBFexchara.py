@@ -15,8 +15,10 @@ import pyDownload as download
 dirname = os.getcwd()
 print_lock = threading.Lock()
 data_q = Queue()
-SAVELINK = False
-DEBUG = False
+# SAVELINK = False
+SAVELINK = True
+# DEBUG = False
+DEBUG = True
 
 prefix1 = "http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/"
 

@@ -1,0 +1,10 @@
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2_angry.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2_mood.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2_mortifying.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2_surprise.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040070000_unarmed2_weak.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040028000_cockpit.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040028000_cockpit_angry.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040028000_cockpit_serious.png
+http://game-a.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/3040028000_cockpit_surprise.png
