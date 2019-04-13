@@ -1,2 +1,0 @@
-[r|sr|ssr|skin|extra] [chara|quest|zoom|cover]
-72,266,211,93,940,
