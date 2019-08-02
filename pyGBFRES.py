@@ -18,13 +18,10 @@ import pyGBFweapon as weapondl
 dirname = os.getcwd()
 print_lock = threading.Lock()
 data_q = Queue()
-# SAVELINK = False
-SAVELINK = True
+SAVELINK = False
 DEBUG = False
 
-# 线程数
-# MaxThread = 40
-MaxThread = 20
+MaxThread = 40
 
 def mkdir(path):
     tmppath = os.getcwd()+"\\"+path
@@ -42,16 +39,15 @@ def main():
         return
 
     start = time.time()
-
     try:
-        print("download summon stone")
-        summondl.main()
+        print("download chara")
+        charadl.main()
     except:
         pass
 
     try:
-        print("download chara")
-        charadl.main()
+        print("download background")
+        bgdl.main()
     except:
         pass
 
@@ -61,12 +57,9 @@ def main():
     except:
         pass
 
-    
-
-    '''
     try:
-        print("download background")
-        bgdl.main()
+        print("download summon stone")
+        summondl.main()
     except:
         pass
 
@@ -75,7 +68,6 @@ def main():
         weapondl.main()
     except:
         pass
-    '''
 
     print("entire job took:", time.time()-start)
 

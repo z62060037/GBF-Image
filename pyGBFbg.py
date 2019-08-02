@@ -14,16 +14,13 @@ import pyDownload as download
 dirname = os.getcwd()
 print_lock = threading.Lock()
 data_q = Queue()
-# SAVELINK = False
-SAVELINK = True
+SAVELINK = False
 DEBUG = False
 
 # chara[R/SR/SSR/skin] quest[r/sr/ssr/extra] summon[n/r/sr/ssr] zoom[r/sr/ssr/skin] mypage[r/sr/ssr/skin] class cover bg chara[extra] zoom[extra]
 groupstack = -1
 grouptop = 0
-# prefix1 = "http://game-a.granbluefantasy.jp/assets/img/sp/top/bg/million/bg_"
-# http://game-a.granbluefantasy.jp/assets/img/sp/top/bg/bg_23.jpg
-prefix1 = "http://game-a.granbluefantasy.jp/assets/img/sp/top/bg/bg_"
+prefix1 = "http://game-a.granbluefantasy.jp/assets/img/sp/top/bg/million/bg_"
 groupdir = "img\\bg"
 #quest extra needs big step
 groupstep = 50
