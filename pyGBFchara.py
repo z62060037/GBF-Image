@@ -23,10 +23,25 @@ DEBUG = False
 groupstack = [-1,-1,-1,-1,-1]
 grouptop =   [0,0,0,0,0]
 prefix1 = "http://game-a.granbluefantasy.jp/assets/img/sp/"
-groupstr = ["assets/npc/b/302","assets/npc/b/303","assets/npc/b/304","assets/npc/b/371","assets/npc/b/399",
-            "quest/scene/character/body/302","quest/scene/character/body/303","quest/scene/character/body/304","","quest/scene/character/body/399",
-            "assets/npc/zoom/302","assets/npc/zoom/303","assets/npc/zoom/304","assets/npc/zoom/371","assets/npc/zoom/399",
-            "assets/npc/my/302","assets/npc/my/303","assets/npc/my/304","assets/npc/my/371",""]
+groupstr = [
+ "assets/npc/b/302"
+,"assets/npc/b/303"
+,"assets/npc/b/304"
+,"assets/npc/b/371"
+,"assets/npc/b/399"
+,"quest/scene/character/body/302"
+,"quest/scene/character/body/303"
+,"quest/scene/character/body/304",""
+,"quest/scene/character/body/399"
+,"assets/npc/zoom/302"
+,"assets/npc/zoom/303"
+,"assets/npc/zoom/304"
+,"assets/npc/zoom/371"
+,"assets/npc/zoom/399"
+,"assets/npc/my/302"
+,"assets/npc/my/303"
+,"assets/npc/my/304"
+,"assets/npc/my/371",""]
 # chara[R/SR/SSR/skin] quest[r/sr/ssr/extra] summon[n/r/sr/ssr] zoom[r/sr/ssr/skin] mypage[r/sr/ssr/skin] class cover
 groupdir = ["img\\chara\\r","img\\chara\\sr","img\\chara\\ssr","img\\chara\\skin","img\\chara\\extra",
             "img\\quest\\r","img\\quest\\sr","img\\quest\\ssr","","img\\quest\\extra",
@@ -82,19 +97,6 @@ def saveIndex(imgData):
         imgName = str(imgData.id).zfill(4)+"000"
         gid = imgData.groupid
         count = 0
-        # book
-        for isuf in suflist:
-            try:
-                url = prefix1 + groupstr[gid] + imgName + isuf+ ".png"
-                if(download.saveImg(url,groupdir[gid])):
-                    count+=1
-                    if(SAVELINK):
-                        #print(grouplink[imgData.groupid])
-                        #print(imgData.url)
-                        with open(grouplink[gid],"a") as linkfile:
-                            linkfile.write(url+"\n")
-            except:
-                pass
         # zoom
         for isuf in suflist:
             try:
@@ -108,6 +110,21 @@ def saveIndex(imgData):
                             linkfile.write(url+"\n")
             except:
                 pass
+        '''
+        # book
+        for isuf in suflist:
+            try:
+                url = prefix1 + groupstr[gid] + imgName + isuf+ ".png"
+                if(download.saveImg(url,groupdir[gid])):
+                    count+=1
+                    if(SAVELINK):
+                        #print(grouplink[imgData.groupid])
+                        #print(imgData.url)
+                        with open(grouplink[gid],"a") as linkfile:
+                            linkfile.write(url+"\n")
+            except:
+                pass
+        
         # quest
         if(gid != 3):
             for iexp in explist:
@@ -153,7 +170,7 @@ def saveIndex(imgData):
             if(imgData.id>grouptop[gid]):
                 grouptop[gid] = imgData.id
 
-
+        '''
 def worker():
     while True:
         imgData1 = data_q.get()
